@@ -3,6 +3,7 @@ html {
   background-color: #f2f1ed;
   font-family: "Patua One", sans-serif;
   line-height: 1.5;
+  margin: 1rem;
 }
 
 *,
@@ -24,12 +25,22 @@ body {
   margin: 0;
 }
 
-ul li {
+nav ul {
   list-style-type: none;
+  flex-wrap: wrap;
+}
+
+ul li {
   color: #fff;
 }
 
+.banner {
+  position: relative;
+}
+
 .logo {
+  position: absolute;
+  padding: 1rem;
   width: 14rem;
 }
 
@@ -43,5 +54,5 @@ main {
 }
 
 p {
-  font-family: "Georgia", serif;
+  font-family: Georgia, serif;
 }
