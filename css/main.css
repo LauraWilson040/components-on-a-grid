@@ -31,6 +31,7 @@ nav ul {
 }
 
 ul li {
+  justify-content: space-between;
   vertical-align: middle;
   display: inline-block;
   color: #fff;
@@ -44,6 +45,7 @@ ul li {
   position: absolute;
   padding: 1rem;
   width: 14rem;
+  bottom: 0;
 }
 
 h2 {
@@ -58,3 +60,7 @@ main {
 p {
   font-family: Georgia, serif;
 }
+
+grid-template-areas: ;
+grid-area
+display: flex;
