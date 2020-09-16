@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
-  background-color: #f2f1ed;
   font-family: "Patua One", sans-serif;
+  background-color: #f2f1ed;
   line-height: 1.5;
   margin: 1rem;
 }
@@ -44,7 +44,7 @@ ul li {
   position: relative;
 }
 
-.logo img{
+.logo img {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
 }
