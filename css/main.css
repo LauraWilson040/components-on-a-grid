@@ -38,29 +38,49 @@ ul li {
 }
 
 .banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 4rem;
   position: relative;
 }
 
+.logo img{
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
 .logo {
+  grid-column: 1;
+  grid-row: 2;
   position: absolute;
   padding: 1rem;
   width: 14rem;
-  bottom: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "box1 box1"
+    "box3 box2";
+}
+
+main > figure:nth-child(1) {
+  grid-area: box3;
+}
+
+main > figure:nth-child(2) {
+  grid-area: box2;
+}
+
+main > figure:nth-child(3) {
+  grid-area: box1;
 }
 
 h2 {
   color: #30658d;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 p {
   font-family: Georgia, serif;
 }
-
-grid-template-areas: ;
-grid-area
-display: flex;
