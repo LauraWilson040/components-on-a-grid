@@ -31,6 +31,8 @@ nav ul {
 }
 
 ul li {
+  vertical-align: middle;
+  display: inline-block;
   color: #fff;
 }
 
