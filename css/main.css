@@ -22,10 +22,30 @@ header {
 }
 
 body {
-  margin: 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1rem;
+
+  margin: 0;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+}
+
+.logo {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+
+  position: absolute;
+  padding: 1rem;
+  width: 14rem;
+}
+
+.logo img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
 nav ul {
@@ -41,23 +61,6 @@ ul li {
 
 nav a {
   color: #fff;
-}
-
-.banner {
-  position: relative;
-}
-
-.logo {
-  grid-column: 1;
-  grid-row: 3;
-  position: absolute;
-  padding: 1rem;
-  width: 14rem;
-}
-
-.logo img {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
 }
 
 main {
