@@ -23,7 +23,7 @@ header {
 
 body {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 2fr;
   grid-template-rows: 1fr 1rem;
 
   margin: 0;
@@ -35,8 +35,8 @@ body {
 }
 
 .logo {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
+  grid-column: 1;
+  grid-row: 3;
 
   position: absolute;
   padding: 1rem;
@@ -77,15 +77,11 @@ main {
 }
 
 main > figure:nth-child(1) {
-  grid-area: box3;
+  grid-area: 1;
 }
 
 main > figure:nth-child(2) {
-  grid-area: box2;
-}
-
-main > figure:nth-child(3) {
-  grid-area: box1;
+  grid-area: 1;
 }
 
 h2 {
