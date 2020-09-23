@@ -23,33 +23,33 @@ header {
 
 body {
   margin: 0;
-}
 
-.banner {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "box1 box2"
-    "box3 box3";
-
-  position: relative;
+    "box1 box1"
+    "box3 box2";
 }
 
-.banner img {
+body img {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
 }
 
-.banner:nth-of-type(1) {
-  grid-area: box3;
-}
-
-.banner:nth-of-type(2) {
+.pano {
   grid-area: box1;
 }
 
-.banner:nth-of-type(3) {
+figure:nth-of-type(1) {
   grid-area: box2;
+}
+
+figure:nth-of-type(2) {
+  grid-area: box3;
+}
+
+.banner {
+  position: relative;
 }
 
 .logo {
