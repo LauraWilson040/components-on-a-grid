@@ -30,7 +30,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-areas:
     "box1 box2"
-    "box3 box4";
+    "box3 box3";
 
   position: relative;
 }
@@ -58,10 +58,13 @@ body {
   width: 14rem;
 }
 
+nav {
+  display: flex;
+}
+
 nav ul {
   list-style-type: none;
   flex-wrap: wrap;
-  display: flex;
 }
 
 ul li {
