@@ -25,7 +25,8 @@ body {
   margin: 0;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
   grid-template-areas:
     "box1 box1"
     "box3 box2";
@@ -66,7 +67,9 @@ figure:nth-of-type(3) {
 
 nav {
   grid-column: 1;
-  grid-row: 1 / -1;
+  grid-row: 1 / 1;
+
+  align-self: end;
 
   z-index: 1;
 }
@@ -78,7 +81,7 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 nav li {
@@ -113,5 +116,6 @@ main > figure:nth-child(3) {
 }
 
 h2 {
+  font-family: "Patua One", sans-serif;
   color: #30658d;
 }
