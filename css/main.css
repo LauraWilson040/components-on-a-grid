@@ -53,7 +53,6 @@ figure:nth-of-type(2) {
 }
 
 .logo {
-  position: absolute;
   padding: 1rem;
   width: 14rem;
 }
@@ -69,7 +68,7 @@ figure:nth-of-type(2) {
 }
 
 nav {
-    display: flex;
+  display: flex;
 }
 
 nav ul {
