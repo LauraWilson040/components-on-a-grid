@@ -22,35 +22,46 @@ header {
 }
 
 body {
-  display: grid;
-  grid-template-columns: 2fr;
-  grid-template-rows: 1fr 1rem;
-
   margin: 0;
 }
 
 .banner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "box1 box2"
+    "box3 box4";
+
   position: relative;
-  display: flex;
+}
+
+.banner img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.banner:nth-of-type(1) {
+  grid-area: box3;
+}
+
+.banner:nth-of-type(2) {
+  grid-area: box1;
+}
+
+.banner:nth-of-type(3) {
+  grid-area: box2;
 }
 
 .logo {
-  grid-column: 1;
-  grid-row: 3;
-
   position: absolute;
   padding: 1rem;
   width: 14rem;
 }
 
-.logo img {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-}
-
 nav ul {
   list-style-type: none;
   flex-wrap: wrap;
+  display: flex;
 }
 
 ul li {
@@ -67,8 +78,8 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "box1 box1"
-    "box3 box2";
+    "box1 box2"
+    "box3 box3";
 }
 
 .main img {
@@ -77,11 +88,15 @@ main {
 }
 
 main > figure:nth-child(1) {
-  grid-area: 1;
+  grid-area: box1;
 }
 
 main > figure:nth-child(2) {
-  grid-area: 1;
+  grid-area: box2;
+}
+
+main > figure:nth-child(3) {
+  grid-area: box3;
 }
 
 h2 {
