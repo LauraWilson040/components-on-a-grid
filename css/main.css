@@ -16,6 +16,10 @@ img {
   width: 100%;
 }
 
+header {
+  /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
+}
+
 body {
   margin: 0;
 
