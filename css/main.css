@@ -53,24 +53,30 @@ figure:nth-of-type(3) {
 }
 
 .logo {
-  align-self: flex-end;
+  align-self: center;
   grid-column: 1 / -1;
   grid-row: 1 / -1;
 
-  padding: 1rem;
-  width: 14rem;
+  padding: .5rem 1rem;
+  width: 16rem;
+
+  z-index: 1;
 }
 
 nav ul {
+  align-self: flex-start;
+
+  justify-content: space-between;
   list-style-type: none;
-  flex-wrap: wrap;
   display: flex;
+
+  z-index: 1;
 }
 
 ul li {
-  justify-content: space-between;
   vertical-align: middle;
   display: inline-block;
+  font-weight: bold;
 }
 
 nav a {
@@ -99,9 +105,11 @@ main > figure:nth-child(3) {
 }
 
 h2 {
+  font-weight: bold;
   color: #30658d;
 }
 
 p {
   font-family: "Patua One", sans-serif;
+  font-weight: normal;
 }
