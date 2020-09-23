@@ -16,16 +16,11 @@ img {
   width: 100%;
 }
 
-header {
-  /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
-  display: contents;
-}
-
 body {
   margin: 0;
 
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "box1 box1"
     "box3 box2";
@@ -41,39 +36,30 @@ body img {
 }
 
 figure:nth-of-type(1) {
-  grid-area: box2;
+  grid-area: box1;
 }
 
 figure:nth-of-type(2) {
-  grid-area: box3;
+  grid-area: box1;
 }
 
-.banner {
-  position: relative;
-}
-
-.logo {
-  padding: 1rem;
-  width: 14rem;
-}
-
-.banner {
-  position: relative;
+figure:nth-of-type(3) {
+  grid-area: box1;
 }
 
 .logo {
-  position: absolute;
+  align-self: flex-end;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+
   padding: 1rem;
   width: 14rem;
-}
-
-nav {
-  display: flex;
 }
 
 nav ul {
   list-style-type: none;
   flex-wrap: wrap;
+  display: flex;
 }
 
 ul li {
@@ -87,11 +73,7 @@ nav a {
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "box1 box2"
-    "box3 box3";
+  display: contents;
 }
 
 .main img {
@@ -100,7 +82,7 @@ main {
 }
 
 main > figure:nth-child(1) {
-  grid-area: box1;
+  grid-area: box3;
 }
 
 main > figure:nth-child(2) {
@@ -108,7 +90,7 @@ main > figure:nth-child(2) {
 }
 
 main > figure:nth-child(3) {
-  grid-area: box3;
+  grid-area: box1;
 }
 
 h2 {
