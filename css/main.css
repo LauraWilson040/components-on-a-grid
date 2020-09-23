@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: "Patua One", sans-serif;
+  font-family: Georgia, serif;
   background-color: #f2f1ed;
   line-height: 1.5;
   margin: 1rem;
@@ -89,5 +89,5 @@ h2 {
 }
 
 p {
-  font-family: Georgia, serif;
+  font-family: "Patua One", sans-serif;
 }
